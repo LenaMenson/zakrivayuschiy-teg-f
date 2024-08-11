@@ -4,3 +4,105 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+
+/* <svg 
+    xmlns="http://www.w3.org/2000/svg" 
+    fill="currentColor" 
+    viewBox="0 0 22 21">
+    <style>      
+@media (prefers-color-scheme: dark) {
+      :root {
+        fill: white;      }    }  
+@media (prefers-color-scheme: dark) {
+      :root {
+        fill: white;      }    } 
+</style>
+  <path d="M12.356 5.435 …"/>  
+  </svg>  */
+
+  .page.theme_light {
+  
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+  }
+/* СВЕТЛАЯ ТЕМА */
+  html.theme-light {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
+    --font-weight-title: 700;
+    --font-weight-text: 400;
+    --bg-color: #FFFFFF;
+    --border-color: #000000;
+    --main-text-color: #000000;
+    --color-contour-heart: #000000;
+    --color-sparks-heart: #FF0000;
+    --color-core-heart: #FFFFFF;
+    --accent-color: #E7E7E7;
+    --backdrop-color: #000000;
+    --watermark-shadow-color: #f5ef3a;
+    
+    background-color: var(--bg-color);
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --main-font: 'Inter-Variable';
+      --accent-font: 'PressStart2P-Regular';
+      --font-weight-title: 700;
+      --font-weight-text: 400;
+      --bg-color: #FFFFFF;
+      --border-color: #000000;
+      --main-text-color: #000000;
+      --color-contour-heart: #000000;
+      --color-sparks-heart: #FF0000;
+      --color-core-heart: #FFFFFF;
+      --accent-color: #E7E7E7;
+      --backdrop-color: #000000;
+      --watermark-shadow-color: #f5ef3a;
+    }
+   
+    .page {
+    background-color: var(--bg-color);
+    }
+  }
+/* ТЕМНАЯ ТЕМА */
+  html.theme-dark {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P-Regular';
+    --font-weight-title: 785;
+    --font-weight-text: 465;
+    --bg-color: #000000;
+    --border-color: #00CC14;
+    --main-text-color: #00CC14;
+    --color-contour-heart: #00CC14;
+    --color-sparks-heart: #FF0000;
+    --color-core-heart: #00CC14;
+    --accent-color: #00CC14;
+    --backdrop-color: #000000;
+    --watermark-shadow-color: #000000;
+    
+    background-color: var(--bg-color);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --main-font: 'Inter-Variable';
+      --accent-font: 'PressStart2P-Regular';
+      --font-weight-title: 785;
+      --font-weight-text: 465;
+      --bg-color: #000000;
+      --border-color: #00CC14;
+      --main-text-color: #00CC14;
+      --color-contour-heart: #00CC14;
+      --color-sparks-heart: #FF0000;
+      --color-core-heart: #00CC14;
+      --accent-color: #00CC14;
+      --backdrop-color: #000000;
+      --watermark-shadow-color: #000000;
+    }
+   
+    .page {
+    background-color: var(--bg-color);
+    }
+  }
