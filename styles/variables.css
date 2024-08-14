@@ -2,10 +2,13 @@
 
 :root {
   --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P-Regular';
+  --accent-font: 'PressStart2P';
   --font-weight-title: 700;
   --font-weight-text: 400;
   --bg-color: #FFFFFF;
+  --bg-wrapper-color: repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
+  repeating-linear-gradient(0deg, #d3d3d3, transparent 2px),
+  linear-gradient(#e7e7e7, #1a1a1a);
   --border-color: #000000;
   --main-text-color: #000000;
   --color-contour-heart: #000000;
