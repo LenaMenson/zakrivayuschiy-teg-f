@@ -1,20 +1,23 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --main-font: 'Inter-Variable';
-  --accent-font: 'PressStart2P';
+  --main-font: "Inter-Variable";
+  --accent-font: "PressStart2P";
   --font-weight-title: 700;
   --font-weight-text: 400;
-  --bg-color: #FFFFFF;
-  --bg-wrapper-color: repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
-  repeating-linear-gradient(0deg, #d3d3d3, transparent 2px),
-  linear-gradient(#e7e7e7, #1a1a1a);
+  --bg-color: #ffffff;
+  --bg-wrapper-color: repeating-linear-gradient(
+      -90deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --border-color: #000000;
   --main-text-color: #000000;
   --color-contour-heart: #000000;
-  --color-sparks-heart: #FF0000;
-  --color-core-heart: #FFFFFF;
-  --accent-color: #E7E7E7;
+  --color-sparks-heart: #ff0000;
+  --color-core-heart: #ffffff;
+  --accent-color: #ffffff;
   --backdrop-color: #000000;
-  --watermark-shadow-color: #f5ef3a;
 }

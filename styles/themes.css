@@ -32,38 +32,22 @@ html.theme-light {
   --font-weight-title: 700;
   --font-weight-text: 400;
   --bg-color: #ffffff;
-  --bg-wrapper-color: repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
-  repeating-linear-gradient(0deg, #d3d3d3, transparent 2px),
-  linear-gradient(#e7e7e7, #1a1a1a);
+  --bg-wrapper-color: repeating-linear-gradient(
+      -90deg,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 00.01%, #1a1a1a);
   --border-color: #000000;
   --main-text-color: #000000;
   --color-contour-heart: #000000;
   --color-sparks-heart: #ff0000;
   --color-core-heart: #ffffff;
-  --accent-color: #e7e7e7;
+  --accent-color: #ffffff;
   --backdrop-color: #000000;
-  --watermark-shadow-color: #f5ef3a;
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --main-font: "Inter-Variable";
-    --accent-font: "PressStart2P";
-    --font-weight-title: 700;
-    --font-weight-text: 400;
-    --bg-color: #ffffff;
-    --bg-wrapper-color: repeating-linear-gradient(-90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(0deg, #d3d3d3, transparent 2px),
-    linear-gradient(#e7e7e7, #1a1a1a);
-    --border-color: #000000;
-    --main-text-color: #000000;
-    --color-contour-heart: #000000;
-    --color-sparks-heart: #ff0000;
-    --color-core-heart: #ffffff;
-    --accent-color: #e7e7e7;
-    --backdrop-color: #000000;
-    --watermark-shadow-color: #f5ef3a;
-  }
-}
+
 /* ТЕМНАЯ ТЕМА */
 html.theme-dark {
   --main-font: "Inter-Variable";
@@ -71,9 +55,9 @@ html.theme-dark {
   --font-weight-title: 785;
   --font-weight-text: 465;
   --bg-color: #000000;
-  --bg-wrapper-color: repeating-linear-gradient(-90deg, #000, transparent 2px),
-  repeating-linear-gradient(0deg, #000, transparent 2px),
-  linear-gradient(#007f0c, #004306);
+  --bg-wrapper-color: repeating-linear-gradient(-90deg, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
   --border-color: #00cc14;
   --main-text-color: #00cc14;
   --color-contour-heart: #00cc14;
@@ -81,7 +65,6 @@ html.theme-dark {
   --color-core-heart: #00cc14;
   --accent-color: #00cc14;
   --backdrop-color: #000000;
-  --watermark-shadow-color: #000000;
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -90,8 +73,8 @@ html.theme-dark {
     --font-weight-title: 785;
     --font-weight-text: 465;
     --bg-color: #000000;
-    --bg-wrapper-color: repeating-linear-gradient(-90deg, #000, transparent 2px),
-    repeating-linear-gradient(0deg, #000, transparent 2px),
+    --bg-wrapper-color: repeating-linear-gradient(-90deg, #000 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(0deg, #000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
     --border-color: #00cc14;
     --main-text-color: #00cc14;
@@ -100,6 +83,5 @@ html.theme-dark {
     --color-core-heart: #00cc14;
     --accent-color: #00cc14;
     --backdrop-color: #000000;
-    --watermark-shadow-color: #000000;
   }
 }
